@@ -1,1 +1,157 @@
+div.App {
+    background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+}
 
+#row-1 {
+    padding-bottom: 4rem;
+}
+
+div.card-deck {
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+img.card-img-top {
+    height: 13rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+div.card-title {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(7, 45, 95);
+    padding: 0.8rem;
+    margin-bottom: 0;
+    font-size: 1.8rem;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+button.btn.btn-primary {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+div.card-footer {
+    text-align: center;
+}
+
+button.btn.btn-warning {
+    background-color: rgb(224, 125, 12);
+    border: rgb(185, 102, 7);
+    color: white;
+    font-weight: bold;
+    outline: none;
+}
+
+button.btn.btn-warning:hover {
+    background-color: rgb(185, 102, 7);
+}
+
+button.btn.btn-warning:active {
+    background-color: rgb(185, 102, 7);
+}
+button.btn.btn-warning:focus {
+    outline: none;
+}
+
+div.col-lg-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+nav.navbar.navbar-expand-lg {
+    text-align: right;
+    direction: rtl;
+}
+
+div.mr-auto {
+    padding-top: 2%;
+}
+
+@media (min-width: 992px) {
+    a.nav-link {
+        display: none;
+    }
+}
+
+a.nav-link {
+    line-height: 1;
+}
+
+div.mr-auto.navbar-nav a.nav-link {
+    color: burlywood;
+}
+
+div.list-group-item {
+    border: none;
+    padding: 0.4rem;
+}
+
+div.card-body {
+    padding: 0.6rem;
+    padding-bottom: 0.8rem;
+    text-align: right;
+    direction: rtl;
+}
+
+div.linkTo.list-group-item {
+    color: blue;
+    line-height: 1;
+}
+
+div.linkTo.list-group-item:hover {
+    color: #4481eb;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+li.list-group-item,
+li.list-group-item a {
+    border: none;
+    background-color: transparent;
+}
+
+li.list-group-item,
+li.list-group-item a {
+    padding: 0.1rem;
+}
+
+li.list-group-item a::before {
+    content: ' ✦ ';
+}
+
+li.list-group-item a {
+    color: blue;
+}
+
+li.list-group-item a:hover {
+    background-color: #4481eb;
+    color: white;
+}
+
+div#seperator.container {
+    text-align: center;
+    padding: 0;
+    font-size: 2.5rem;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    color: #fff;
+    font-weight: bold;
+    background-color: blue;
+    border-radius: 0.15rem;
+}
+
+/* p.card-text#listTitle::before {
+    content: ' ◀︎ ';
+} */
+
+p.card-text#listTitle {
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-decoration: underline;
+}

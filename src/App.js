@@ -2,24 +2,15 @@ import React from 'react';
 import './App.css';
 import { SelfServiceCard } from './SelfServiceCard';
 import CallCardsList from './CallCardsList';
-import {
-  Container,
-  Divider,
-  Dropdown,
-  Grid,
-  Header,
-  Image,
-  List,
-  Menu,
-  Segment,
-  Button,
-  Icon,
-  Item,
-  Label,
-  Step,
-  Table,
-  Card,
-} from 'semantic-ui-react';
+import NavBar from './NavBar';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
+import CardDeck from 'react-bootstrap/CardDeck';
+import Button from 'react-bootstrap/Button';
+import ListGroup from 'react-bootstrap/ListGroup';
+
 
 const callCards = [
   { title: 'card-1' },
@@ -41,86 +32,240 @@ const App = () => {
 
   return (
     <div className="App">
-      {/* <SelfServiceCard />
-      <CallCardsList cards={callCards} /> */}
-      <Menu fixed='top' inverted>
-        <Container>
-          <Menu.Item as='a' header>
-            <Image size='mini' src='/logo.png' style={{ marginRight: '1.5rem' }} />
-            מרכז תמיכה - נתב ויזואלי
-        </Menu.Item>
-          <Menu.Item as='a'>Home</Menu.Item>
+      <NavBar />
+      <Container style={{ paddingTop: '5rem' }} id="startPage">
+        <Row className="justify-content-lg-center" id="row-1">
+          <Col lg={5}>
+            <Card id="selfService">
+              <Card.Title>שירות עצמי<br />Self Service</Card.Title>
+              <Card.Img variant="top"
+                src="https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                fluid="true" />
+              <Card.Body>
+                <Card.Text id="listTitle">לחץ על הבחירה המבוקשת:</Card.Text>
+                <ListGroup as="ul">
+                  <ListGroup.Item as="li"><ListGroup.Item as="a" action href="https://portaldoc.mac.org.il/Pivotal" target="_blank" rel="noopener noreferrer">פתיחת קריאה</ListGroup.Item></ListGroup.Item>
+                  <ListGroup.Item as="li"><ListGroup.Item as="a" action href="https://portaldoc.mac.org.il/dana-na/auth/url_default/welcome.cgi" target="_blank" rel="noopener noreferrer">FreePass - איפוס סיסמה בשירות עצמי</ListGroup.Item></ListGroup.Item>
+                  <ListGroup.Item as="li"><ListGroup.Item as="a" action href="https://api.whatsapp.com/send?phone=972508464238&text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%A8%D7%91%2C%0A%D7%90%D7%A0%D7%90%20%D7%A6%D7%A8%D7%95%20%D7%A2%D7%99%D7%9E%D7%99%20%D7%A7%D7%A9%D7%A8%20%D7%9C%D7%AA%D7%9E%D7%99%D7%9B%D7%94%20%D7%91%D7%A0%D7%95%D7%A9%D7%90%0A%28%D7%A0%D7%90%20%D7%9C%D7%A6%D7%99%D7%99%D7%9F%20%D7%A9%D7%9D%20%D7%9E%D7%9C%D7%90%20%D7%95%D7%A1%D7%99%D7%91%D7%AA%20%D7%94%D7%A4%D7%A0%D7%99%D7%94%29">
+                    פתיחת צ'אט Whatsapp עם מרכז תמיכה<br />(ימים א'-ה' בין השעות 07:30 ל - 17:30)</ListGroup.Item></ListGroup.Item>
 
-          <Dropdown item simple text='תפריט'>
-            <Dropdown.Menu>
-              <Dropdown.Item>List Item</Dropdown.Item>
-              <Dropdown.Item>List Item</Dropdown.Item>
-              <Dropdown.Item>List Item</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
-        </Container>
-      </Menu>
+                </ListGroup>
 
-      <Container text style={{ marginTop: '7em' }}>
-        <Header as='h1'>Semantic UI React Fixed Template</Header>
-        <p>This is a basic fixed menu template using fixed size containers.</p>
-        <p>
-          A text container is used for the main container, which is useful for single column layouts.
-      </p>
 
+
+
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
       </Container>
 
-      <Segment inverted vertical style={{ margin: '5rem 0 0 0', padding: '1em 0em', background: '#1743b2' }}>
-        <Container textAlign='center'>
-          <h1>חיוג ישיר לתמיכה</h1>
-        </Container>
-      </Segment>
-      <Segment style={{ background: '#00aeff', marginTop: 0, borderRadius: 0, paddingBottom: '3rem', padding: '5px 5px 5px' }}>
-        <Container text style={{ marginTop: '2em' }}>
-          <Grid columns={2} doubling stackable>
-            <Grid.Column>
+      <Container id="seperator">חיוג ישיר לתמיכה</Container>
 
-              <Card style={{ width: '100%' }}>
-                <Card.Header style={{ textAlign: 'center', color: 'white', padding: '0.8rem', fontWeight: 'bold', fontSize: '1.5rem', background: '#0e1d8e' }}>זכאות</Card.Header>
-
-                <Image src='https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60' wrapped ui={false} />
-
-                <Card.Content>
-
-
-                  <Card.Description>
-                    Daniel is a comedian living in Nashville.
-                    Daniel is a comedian living in Nashville.
-                    Daniel is a comedian living in Nashville.
-      </Card.Description>
-                </Card.Content>
-                <Card.Content style={{ textAlign: 'center' }}>
-                  <Button color='orange'>חיוג לצוות זכאות</Button>
-                </Card.Content>
-
+      <Container>
+        <Row id="row-2">
+          <CardDeck>
+            <Col lg={4} md={6}>
+              <Card id="passwords">
+                <Card.Title>סיסמאות</Card.Title>
+                <Card.Img fluid="true" variant="top" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                <Card.Body>
+                  <Card.Text>
+                    This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+      </Card.Text>
+                </Card.Body>
+                <Card.Footer>
+                  <Button variant="warning">חיוג לצוות זכאות</Button>
+                </Card.Footer>
               </Card>
+            </Col>
+            <Col lg={4} md={6}>
+              <Card id="citrix">
+                <Card.Title>Citrix  סביבת</Card.Title>
+                <Card.Img fluid="true" variant="top" src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                <Card.Body>
+                  <Card.Text>
+                    This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+      </Card.Text>
+                </Card.Body>
+                <Card.Footer>
+                  <Button variant="warning">חיוג לצוות זכאות</Button>
+                </Card.Footer>
+              </Card>
+            </Col>
+            <Col lg={4} md={6}>
+              <Card id="as400">
+                <Card.Title>AS400 כוכב</Card.Title>
+                <Card.Img fluid="true" variant="top" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                <Card.Body>
+                  <Card.Text>
+                    This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+      </Card.Text>
+                </Card.Body>
+                <Card.Footer>
+                  <Button variant="warning">חיוג לצוות זכאות</Button>
+                </Card.Footer>
+              </Card>
+            </Col>
+            <Col lg={4} md={6}>
+              <Card id="goodHead">
+                <Card.Title>"חברת "ראש טוב</Card.Title>
+                <Card.Img fluid="true" variant="top" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                <Card.Body>
+                  <Card.Text>
+                    This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+      </Card.Text>
+                </Card.Body>
+                <Card.Footer>
+                  <Button variant="warning">חיוג לצוות זכאות</Button>
+                </Card.Footer>
+              </Card>
+            </Col>
+            <Col lg={4} md={6}>
+              <Card id="doctors">
+                <Card.Title>רופאים עצמאיים</Card.Title>
+                <Card.Img fluid="true" variant="top" src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                <Card.Body>
+                  <Card.Text>
+                    This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+      </Card.Text>
+                </Card.Body>
+                <Card.Footer>
+                  <Button variant="warning">חיוג לצוות זכאות</Button>
+                </Card.Footer>
+              </Card>
+            </Col>
+            <Col lg={4} md={6}>
+              <Card id="docLine">
+                <Card.Title>קו לרופא</Card.Title>
+                <Card.Img fluid="true" variant="top" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                <Card.Body>
+                  <Card.Text>
+                    This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+      </Card.Text>
+                </Card.Body>
+                <Card.Footer>
+                  <Button variant="warning">חיוג לצוות זכאות</Button>
+                </Card.Footer>
+              </Card>
+            </Col>
+            <Col lg={4} md={6}>
+              <Card id="pay">
+                <Card.Title>זכאות</Card.Title>
+                <Card.Img fluid="true" variant="top" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                <Card.Body>
+                  <Card.Text>
+                    This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+      </Card.Text>
+                </Card.Body>
+                <Card.Footer>
+                  <Button variant="warning">חיוג לצוות זכאות</Button>
+                </Card.Footer>
+              </Card>
+            </Col>
+            <Col lg={4} md={6}>
+              <Card id="teleRadio">
+                <Card.Title>טלרדיולוגיה</Card.Title>
+                <Card.Img fluid="true" variant="top" src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                <Card.Body>
+                  <Card.Text>
+                    This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+      </Card.Text>
+                </Card.Body>
+                <Card.Footer>
+                  <Button variant="warning">חיוג לצוות זכאות</Button>
+                </Card.Footer>
+              </Card>
+            </Col>
+            <Col lg={4} md={6}>
+              <Card id="sap">
+                <Card.Title>SAP</Card.Title>
+                <Card.Img fluid="true" variant="top" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                <Card.Body>
+                  <Card.Text>
+                    This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+      </Card.Text>
+                </Card.Body>
+                <Card.Footer>
+                  <Button variant="warning">חיוג לצוות זכאות</Button>
+                </Card.Footer>
+              </Card>
+            </Col>
+            <Col lg={4} md={6}>
+              <Card id="equipment">
+                <Card.Title>ציוד קצה</Card.Title>
+                <Card.Img fluid="true" variant="top" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                <Card.Body>
+                  <Card.Text>
+                    This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+      </Card.Text>
+                </Card.Body>
+                <Card.Footer>
+                  <Button variant="warning">חיוג לצוות זכאות</Button>
+                </Card.Footer>
+              </Card>
+            </Col>
+            <Col lg={4} md={6}>
+              <div id="telephone"></div>
+              <Card>
+                <Card.Title>תקשורת וטלפוניה</Card.Title>
+                <Card.Img fluid="true" variant="top" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                <Card.Body>
+                  <Card.Text>
+                    This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+      </Card.Text>
+                </Card.Body>
+                <Card.Footer>
+                  <Button variant="warning">חיוג לצוות זכאות</Button>
+                </Card.Footer>
+              </Card>
+            </Col>
+            <Col lg={4} md={6}>
+              <Card id="stations">
+                <Card.Title>עמדות שירות</Card.Title>
+                <Card.Img fluid="true" variant="top" src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                <Card.Body>
+                  <Card.Text>
+                    This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+      </Card.Text>
+                </Card.Body>
+                <Card.Footer>
+                  <Button variant="warning">חיוג לצוות זכאות</Button>
+                </Card.Footer>
+              </Card>
+            </Col>
+            <Col lg={4} md={6}>
+              <Card id="suppliers">
+                <Card.Title>ספקים</Card.Title>
+                <Card.Img fluid="true" variant="top" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                <Card.Body>
+                  <Card.Text>
+                    This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+      </Card.Text>
+                </Card.Body>
+                <Card.Footer>
+                  <Button variant="warning">חיוג לצוות זכאות</Button>
+                </Card.Footer>
+              </Card>
+            </Col>
+          </CardDeck>
+        </Row>
+      </Container>
 
-            </Grid.Column>
-            <Grid.Column>
-              <Segment>Content</Segment>
-            </Grid.Column>
-            <Grid.Column>
-              <Segment>Content</Segment>
-            </Grid.Column>
-            <Grid.Column>
-              <Segment>Content</Segment>
-            </Grid.Column>
-            <Grid.Column>
-              <Segment>Content</Segment>
-            </Grid.Column>
-            <Grid.Column>
-              <Segment>Content</Segment>
-            </Grid.Column>
-          </Grid>
-
-        </Container>
-      </Segment>
-    </div>
+    </div >
   );
 }
 
