@@ -33,13 +33,13 @@ const App = () => {
   return (
     <div className="App">
       <NavBar />
-      <Container style={{ paddingTop: '5rem' }} id="startPage">
+      <Container style={{ paddingTop: '5rem' }}>
         <Row className="justify-content-lg-center" id="row-1">
           <Col lg={5}>
             <Card id="selfService">
               <Card.Title>שירות עצמי<br />Self Service</Card.Title>
               <Card.Img variant="top"
-                src="https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                src="../images/selfservice.jpeg"
                 fluid="true" />
               <Card.Body>
                 <Card.Text id="listTitle">לחץ על הבחירה המבוקשת:</Card.Text>
@@ -60,15 +60,16 @@ const App = () => {
         </Row>
       </Container>
 
-      <Container id="seperator">חיוג ישיר לתמיכה</Container>
+
 
       <Container>
+        <Row><Col as="h2" className="divider gradient">חיוג ישיר לתמיכה</Col></Row>
         <Row id="row-2">
           <CardDeck>
             <Col lg={4} md={6}>
               <Card id="passwords">
                 <Card.Title>סיסמאות</Card.Title>
-                <Card.Img fluid="true" variant="top" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                <Card.Img fluid="true" variant="top" src="../images/passwords.jpeg" />
                 <Card.Body>
                   <Card.Text>
                     This is a wider card with supporting text below as a natural lead-in to
@@ -83,7 +84,7 @@ const App = () => {
             <Col lg={4} md={6}>
               <Card id="citrix">
                 <Card.Title>Citrix  סביבת</Card.Title>
-                <Card.Img fluid="true" variant="top" src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                <Card.Img fluid="true" variant="top" src="../images/citrix.jpeg" />
                 <Card.Body>
                   <Card.Text>
                     This is a wider card with supporting text below as a natural lead-in to
@@ -98,7 +99,7 @@ const App = () => {
             <Col lg={4} md={6}>
               <Card id="as400">
                 <Card.Title>AS400 כוכב</Card.Title>
-                <Card.Img fluid="true" variant="top" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                <Card.Img fluid="true" variant="top" src="../images/as400.jpeg" />
                 <Card.Body>
                   <Card.Text>
                     This is a wider card with supporting text below as a natural lead-in to
@@ -113,7 +114,7 @@ const App = () => {
             <Col lg={4} md={6}>
               <Card id="goodHead">
                 <Card.Title>"חברת "ראש טוב</Card.Title>
-                <Card.Img fluid="true" variant="top" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                <Card.Img fluid="true" variant="top" src="../images/goodhead.jpeg" />
                 <Card.Body>
                   <Card.Text>
                     This is a wider card with supporting text below as a natural lead-in to
@@ -128,7 +129,7 @@ const App = () => {
             <Col lg={4} md={6}>
               <Card id="doctors">
                 <Card.Title>רופאים עצמאיים</Card.Title>
-                <Card.Img fluid="true" variant="top" src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                <Card.Img fluid="true" variant="top" src="../images/doctors.jpeg" />
                 <Card.Body>
                   <Card.Text>
                     This is a wider card with supporting text below as a natural lead-in to
@@ -143,7 +144,7 @@ const App = () => {
             <Col lg={4} md={6}>
               <Card id="docLine">
                 <Card.Title>קו לרופא</Card.Title>
-                <Card.Img fluid="true" variant="top" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                <Card.Img fluid="true" variant="top" src="../images/docline.jpeg" />
                 <Card.Body>
                   <Card.Text>
                     This is a wider card with supporting text below as a natural lead-in to
@@ -158,7 +159,7 @@ const App = () => {
             <Col lg={4} md={6}>
               <Card id="pay">
                 <Card.Title>זכאות</Card.Title>
-                <Card.Img fluid="true" variant="top" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                <Card.Img fluid="true" variant="top" src="../images/payments.jpeg" />
                 <Card.Body>
                   <Card.Text>
                     This is a wider card with supporting text below as a natural lead-in to
@@ -173,7 +174,7 @@ const App = () => {
             <Col lg={4} md={6}>
               <Card id="teleRadio">
                 <Card.Title>טלרדיולוגיה</Card.Title>
-                <Card.Img fluid="true" variant="top" src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                <Card.Img fluid="true" variant="top" src="../images/teleradio.jpeg" />
                 <Card.Body>
                   <Card.Text>
                     This is a wider card with supporting text below as a natural lead-in to
@@ -188,7 +189,7 @@ const App = () => {
             <Col lg={4} md={6}>
               <Card id="sap">
                 <Card.Title>SAP</Card.Title>
-                <Card.Img fluid="true" variant="top" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                <Card.Img fluid="true" variant="top" src="../images/sap.jpeg" />
                 <Card.Body>
                   <Card.Text>
                     This is a wider card with supporting text below as a natural lead-in to
@@ -203,7 +204,7 @@ const App = () => {
             <Col lg={4} md={6}>
               <Card id="equipment">
                 <Card.Title>ציוד קצה</Card.Title>
-                <Card.Img fluid="true" variant="top" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                <Card.Img fluid="true" variant="top" src="../images/equipment.jpeg" />
                 <Card.Body>
                   <Card.Text>
                     This is a wider card with supporting text below as a natural lead-in to
@@ -219,7 +220,7 @@ const App = () => {
               <div id="telephone"></div>
               <Card>
                 <Card.Title>תקשורת וטלפוניה</Card.Title>
-                <Card.Img fluid="true" variant="top" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                <Card.Img fluid="true" variant="top" src="../images/telecom.jpeg" />
                 <Card.Body>
                   <Card.Text>
                     This is a wider card with supporting text below as a natural lead-in to
@@ -234,7 +235,7 @@ const App = () => {
             <Col lg={4} md={6}>
               <Card id="stations">
                 <Card.Title>עמדות שירות</Card.Title>
-                <Card.Img fluid="true" variant="top" src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                <Card.Img fluid="true" variant="top" src="../images/servicestations.jpeg" />
                 <Card.Body>
                   <Card.Text>
                     This is a wider card with supporting text below as a natural lead-in to
@@ -249,7 +250,7 @@ const App = () => {
             <Col lg={4} md={6}>
               <Card id="suppliers">
                 <Card.Title>ספקים</Card.Title>
-                <Card.Img fluid="true" variant="top" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                <Card.Img fluid="true" variant="top" src="../images/suppliers.jpeg" />
                 <Card.Body>
                   <Card.Text>
                     This is a wider card with supporting text below as a natural lead-in to

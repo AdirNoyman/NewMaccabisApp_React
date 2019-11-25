@@ -19,7 +19,7 @@ class NavBar extends Component {
         let staticNav = this.state.static;
 
         return (
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top" style={staticNav}>
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top" style={staticNav} id="startPage">
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Brand href="#home">מרכז תמיכה - נתב ויזואלי</Navbar.Brand>
                 <Navbar.Collapse id="responsive-navbar-nav">
@@ -27,8 +27,8 @@ class NavBar extends Component {
                         <Nav.Link href="#startPage" onClick={this.turnNavToStatic}>ראשי</Nav.Link>
                         <Nav.Link href="#selfService" onClick={this.turnNavToStatic}>שירות עצמי</Nav.Link>
                         <Nav.Link href="#passwords" onClick={this.turnNavToStatic}>סיסמאות</Nav.Link>
-                        <Nav.Link href="#citrix" onClick={this.turnNavToStatic}>Citrix  סביבת</Nav.Link>
-                        <Nav.Link href="#as400" onClick={this.turnNavToStatic}>AS400 כוכב</Nav.Link>
+                        <Nav.Link href="#citrix" onClick={this.turnNavToStatic}>סביבת Citrix</Nav.Link>
+                        <Nav.Link href="#as400" onClick={this.turnNavToStatic}>כוכב AS400</Nav.Link>
                         <Nav.Link href="#goodHead" onClick={this.turnNavToStatic}>חברת "ראש טוב"</Nav.Link>
                         <Nav.Link href="#doctors" onClick={this.turnNavToStatic}>רופאים עצמאיים</Nav.Link>
                         <Nav.Link href="#docLine" onClick={this.turnNavToStatic}>קו לרופא</Nav.Link>
