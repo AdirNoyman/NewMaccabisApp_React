@@ -75,7 +75,7 @@ const App = () => {
                     <ListGroup.Item as="li">סיסמא אישית למערכות מכבי(AD)</ListGroup.Item>
                     <ListGroup.Item as="li">סיסמת AS400("כוכב")</ListGroup.Item>
                     <ListGroup.Item as="li">סיסמת קליקס(OTP)</ListGroup.Item>
-                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/passwords.pdf" _blank rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
+                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/passwords.pdf" _blank="true" rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
                   </ListGroup>
                 </Card.Body>
                 <Card.Footer>
@@ -91,7 +91,7 @@ const App = () => {
                   <ListGroup as="ul">
                     <ListGroup.Item as="li">דואר אלקטרוני ויישומי Office</ListGroup.Item>
                     <ListGroup.Item as="li">סריקה והדפסה</ListGroup.Item>
-                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/citrix.pdf" _blank rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
+                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/citrix.pdf" _blank="true" rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
                   </ListGroup>
                 </Card.Body>
                 <Card.Footer>
@@ -108,7 +108,7 @@ const App = () => {
                     <ListGroup.Item as="li">יישומי כוכב מכבי: חברות וגבייה</ListGroup.Item>
                     <ListGroup.Item as="li">סריקה / הדפסה ממערכות כוכב</ListGroup.Item>
                     <ListGroup.Item as="li">APPLINX / CRM</ListGroup.Item>
-                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/AS400.pdf" _blank rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
+                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/AS400.pdf" _blank="true" rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
                   </ListGroup>
                 </Card.Body>
                 <Card.Footer>
@@ -122,7 +122,7 @@ const App = () => {
                 <Card.Img fluid="true" variant="top" src="../images/goodhead.jpeg" />
                 <Card.Body>
                   <ListGroup as="ul">
-                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/emptyPdfInfo.pdf" _blank rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
+                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/emptyPdfInfo.pdf" _blank="true" rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
                   </ListGroup>
                 </Card.Body>
                 <Card.Footer>
@@ -139,7 +139,7 @@ const App = () => {
                     <ListGroup.Item as="li">קליקס / פורטל רופא</ListGroup.Item>
                     <ListGroup.Item as="li">זימון תורים לרופאים בקהילה</ListGroup.Item>
                     <ListGroup.Item as="li">תקשורת</ListGroup.Item>
-                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/doctors.pdf" _blank rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
+                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/doctors.pdf" _blank="true" rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
                   </ListGroup>
                 </Card.Body>
                 <Card.Footer>
@@ -156,7 +156,7 @@ const App = () => {
                     <ListGroup.Item as="li">ראש טוב</ListGroup.Item>
                     <ListGroup.Item as="li">מרכז ארצי לדימות / אישורי תרופות</ListGroup.Item>
                     <ListGroup.Item as="li">מכבי ללא הפסקה - תורים דחופים</ListGroup.Item>
-                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/emptyPdfInfo.pdf" _blank rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
+                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/emptyPdfInfo.pdf" _blank="true" rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
                   </ListGroup>
                 </Card.Body>
                 <Card.Footer>
@@ -170,7 +170,7 @@ const App = () => {
                 <Card.Img fluid="true" variant="top" src="../images/payments.jpeg" />
                 <Card.Body>
                   <ListGroup as="ul">
-                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/zakaut.pdf" _blank rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
+                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/zakaut.pdf" _blank="true" rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
                   </ListGroup>
                 </Card.Body>
                 <Card.Footer>
@@ -187,7 +187,7 @@ const App = () => {
                     <ListGroup.Item as="li">דימות / תמר</ListGroup.Item>
                     <ListGroup.Item as="li">ניב"ה אולטראסאונד גניקולוגי / א.ק.ג</ListGroup.Item>
                     <ListGroup.Item as="li">טלמדיסין / קרדילוגיה</ListGroup.Item>
-                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/teleradio.pdf" _blank rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
+                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/teleradio.pdf" _blank="true" rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
                   </ListGroup>
                 </Card.Body>
                 <Card.Footer>
@@ -204,7 +204,7 @@ const App = () => {
                     <ListGroup.Item as="li">סאפ</ListGroup.Item>
                     <ListGroup.Item as="li">פורטל סאפ ומקוונים אישית</ListGroup.Item>
                     <ListGroup.Item as="li">מכ"ם</ListGroup.Item>
-                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/SAP.pdf" _blank rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
+                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/SAP.pdf" _blank="true" rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
                   </ListGroup>
                 </Card.Body>
                 <Card.Footer>
@@ -221,7 +221,7 @@ const App = () => {
                     <ListGroup.Item as="li">עמדת מחשב כולל מסך ומערכות הפעלה</ListGroup.Item>
                     <ListGroup.Item as="li">מדפסות וסורקים</ListGroup.Item>
                     <ListGroup.Item as="li">קורא כרטיסים</ListGroup.Item>
-                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/equipment.pdf" _blank rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
+                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/equipment.pdf" _blank="true" rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
                   </ListGroup>
                 </Card.Body>
                 <Card.Footer>
@@ -239,7 +239,7 @@ const App = () => {
                     <ListGroup.Item as="li">תקשורת / אינטרנט</ListGroup.Item>
                     <ListGroup.Item as="li">טלפוניה</ListGroup.Item>
                     <ListGroup.Item as="li">סנכרון דואר ארגוני למכשיר נייד</ListGroup.Item>
-                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/emptyPdfInfo.pdf" _blank rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
+                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/emptyPdfInfo.pdf" _blank="true" rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
                   </ListGroup>
                 </Card.Body>
                 <Card.Footer>
@@ -256,7 +256,7 @@ const App = () => {
                     <ListGroup.Item as="li">זימון וניהול תורים</ListGroup.Item>
                     <ListGroup.Item as="li">עמדות תור לי <span style={{ color: "blue" }}>●</span> מכבי לי <span style={{ color: "blue" }}>●</span> פוטו</ListGroup.Item>
                     <ListGroup.Item as="li">Video Conference</ListGroup.Item>
-                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/emptyPdfInfo.pdf" _blank rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
+                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/emptyPdfInfo.pdf" _blank="true" rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
                   </ListGroup>
                 </Card.Body>
                 <Card.Footer>
@@ -272,7 +272,7 @@ const App = () => {
                   <ListGroup as="ul">
                     <ListGroup.Item as="li">חיוב ישיר</ListGroup.Item>
                     <ListGroup.Item as="li"> מד"ח <span style={{ color: "blue" }}>●</span> מכבי לי <span style={{ color: "blue" }}>●</span> פוטו</ListGroup.Item>
-                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/emptyPdfInfo.pdf" _blank rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
+                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/emptyPdfInfo.pdf" _blank="true" rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
                   </ListGroup>
                 </Card.Body>
                 <Card.Footer>
