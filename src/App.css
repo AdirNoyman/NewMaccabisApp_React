@@ -1,5 +1,5 @@
 div.App {
-    background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+    background-color: #b0deff;
 }
 
 nav.navbar.navbar-expand-lg.navbar-dark {
@@ -7,7 +7,7 @@ nav.navbar.navbar-expand-lg.navbar-dark {
 }
 
 #row-1 {
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.3rem;
 }
 
 div.card-deck {
@@ -28,7 +28,7 @@ div.card-title {
     font-weight: bold;
     color: white;
     background-color: rgb(7, 45, 95);
-    padding: 0.8rem;
+    padding: 0.5rem;
     margin-bottom: 0;
     font-size: 1.8rem;
     border-top-left-radius: 0.25rem;
@@ -42,24 +42,27 @@ button.btn.btn-primary {
 
 div.card-footer {
     text-align: center;
+    padding: 0.6rem;
 }
 
-button.btn.btn-warning {
+a.btn.btn-warning {
     background-color: rgb(224, 125, 12);
     border: rgb(185, 102, 7);
     color: white;
     font-weight: bold;
     outline: none;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
 }
 
-button.btn.btn-warning:hover {
+a.btn.btn-warning:hover {
     background-color: rgb(185, 102, 7);
 }
 
-button.btn.btn-warning:active {
+a.btn.btn-warning:active {
     background-color: rgb(185, 102, 7);
 }
-button.btn.btn-warning:focus {
+a.btn.btn-warning:focus {
     outline: none;
 }
 
@@ -102,7 +105,7 @@ div.list-group-item {
 
 div.card-body {
     padding: 0.6rem;
-    padding-bottom: 0.8rem;
+    padding-bottom: 0.5rem;
     text-align: right;
     direction: rtl;
 }
@@ -118,10 +121,25 @@ div.linkTo.list-group-item:hover {
     cursor: pointer;
 }
 
+div#selfList.card-body {
+    height: 8.5rem;
+    padding-top: 0.3rem;
+}
+
+div#selfService div.card-title {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+div.card-body {
+    height: 7rem;
+}
+
 li.list-group-item,
 li.list-group-item a {
     border: none;
     background-color: transparent;
+    line-height: 1.3;
 }
 
 li.list-group-item,
@@ -172,7 +190,6 @@ div#seperator.container {
 p.card-text#listTitle {
     margin-bottom: 0;
     font-weight: bold;
-    font-size: 1.1rem;
     text-decoration: underline;
 }
 

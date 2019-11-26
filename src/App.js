@@ -41,7 +41,7 @@ const App = () => {
               <Card.Img variant="top"
                 src="../images/selfservice.jpeg"
                 fluid="true" />
-              <Card.Body>
+              <Card.Body id="selfList">
                 <Card.Text id="listTitle">לחץ על הבחירה המבוקשת:</Card.Text>
                 <ListGroup as="ul">
                   <ListGroup.Item as="li"><ListGroup.Item as="a" action href="https://portaldoc.mac.org.il/Pivotal" target="_blank" rel="noopener noreferrer">פתיחת קריאה</ListGroup.Item></ListGroup.Item>
@@ -71,13 +71,15 @@ const App = () => {
                 <Card.Title>סיסמאות</Card.Title>
                 <Card.Img fluid="true" variant="top" src="../images/passwords.jpeg" />
                 <Card.Body>
-                  <Card.Text>
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.
-      </Card.Text>
+                  <ListGroup as="ul">
+                    <ListGroup.Item as="li">סיסמא אישית למערכות מכבי(AD)</ListGroup.Item>
+                    <ListGroup.Item as="li">סיסמת AS400("כוכב")</ListGroup.Item>
+                    <ListGroup.Item as="li">סיסמת קליקס(OTP)</ListGroup.Item>
+                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/passwords.pdf" _blank rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
+                  </ListGroup>
                 </Card.Body>
                 <Card.Footer>
-                  <Button variant="warning">חיוג לצוות זכאות</Button>
+                  <Button as="a" href="tel:03-746-3523" variant="warning">חיוג לצוות סיסמאות</Button>
                 </Card.Footer>
               </Card>
             </Col>
@@ -86,13 +88,14 @@ const App = () => {
                 <Card.Title>Citrix  סביבת</Card.Title>
                 <Card.Img fluid="true" variant="top" src="../images/citrix.jpeg" />
                 <Card.Body>
-                  <Card.Text>
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.
-      </Card.Text>
+                  <ListGroup as="ul">
+                    <ListGroup.Item as="li">דואר אלקטרוני ויישומי Office</ListGroup.Item>
+                    <ListGroup.Item as="li">סריקה והדפסה</ListGroup.Item>
+                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/citrix.pdf" _blank rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
+                  </ListGroup>
                 </Card.Body>
                 <Card.Footer>
-                  <Button variant="warning">חיוג לצוות זכאות</Button>
+                  <Button as="a" href="tel:03-746-3535" variant="warning">Citrix חיוג לצוות</Button>
                 </Card.Footer>
               </Card>
             </Col>
@@ -101,13 +104,15 @@ const App = () => {
                 <Card.Title>AS400 כוכב</Card.Title>
                 <Card.Img fluid="true" variant="top" src="../images/as400.jpeg" />
                 <Card.Body>
-                  <Card.Text>
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.
-      </Card.Text>
+                  <ListGroup as="ul">
+                    <ListGroup.Item as="li">יישומי כוכב מכבי: חברות וגבייה</ListGroup.Item>
+                    <ListGroup.Item as="li">סריקה / הדפסה ממערכות כוכב</ListGroup.Item>
+                    <ListGroup.Item as="li">APPLINX / CRM</ListGroup.Item>
+                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/AS400.pdf" _blank rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
+                  </ListGroup>
                 </Card.Body>
                 <Card.Footer>
-                  <Button variant="warning">חיוג לצוות זכאות</Button>
+                  <Button as="a" href="tel:03-746-3529" variant="warning">AS400 חיוג לצוות</Button>
                 </Card.Footer>
               </Card>
             </Col>
@@ -116,13 +121,12 @@ const App = () => {
                 <Card.Title>"חברת "ראש טוב</Card.Title>
                 <Card.Img fluid="true" variant="top" src="../images/goodhead.jpeg" />
                 <Card.Body>
-                  <Card.Text>
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.
-      </Card.Text>
+                  <ListGroup as="ul">
+                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/emptyPdfInfo.pdf" _blank rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
+                  </ListGroup>
                 </Card.Body>
                 <Card.Footer>
-                  <Button variant="warning">חיוג לצוות זכאות</Button>
+                  <Button as="a" href="tel:1-800-220-110" variant="warning">"חיוג לחברת "ראש טוב</Button>
                 </Card.Footer>
               </Card>
             </Col>
@@ -131,13 +135,15 @@ const App = () => {
                 <Card.Title>רופאים עצמאיים</Card.Title>
                 <Card.Img fluid="true" variant="top" src="../images/doctors.jpeg" />
                 <Card.Body>
-                  <Card.Text>
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.
-      </Card.Text>
+                  <ListGroup as="ul">
+                    <ListGroup.Item as="li">קליקס / פורטל רופא</ListGroup.Item>
+                    <ListGroup.Item as="li">זימון תורים לרופאים בקהילה</ListGroup.Item>
+                    <ListGroup.Item as="li">תקשורת</ListGroup.Item>
+                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/doctors.pdf" _blank rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
+                  </ListGroup>
                 </Card.Body>
                 <Card.Footer>
-                  <Button variant="warning">חיוג לצוות זכאות</Button>
+                  <Button as="a" href="tel:03-746-3524" variant="warning">חיוג לצוות רופאים עצמאיים</Button>
                 </Card.Footer>
               </Card>
             </Col>
@@ -146,13 +152,15 @@ const App = () => {
                 <Card.Title>קו לרופא</Card.Title>
                 <Card.Img fluid="true" variant="top" src="../images/docline.jpeg" />
                 <Card.Body>
-                  <Card.Text>
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.
-      </Card.Text>
+                  <ListGroup as="ul">
+                    <ListGroup.Item as="li">ראש טוב</ListGroup.Item>
+                    <ListGroup.Item as="li">מרכז ארצי לדימות / אישורי תרופות</ListGroup.Item>
+                    <ListGroup.Item as="li">מכבי ללא הפסקה - תורים דחופים</ListGroup.Item>
+                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/emptyPdfInfo.pdf" _blank rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
+                  </ListGroup>
                 </Card.Body>
                 <Card.Footer>
-                  <Button variant="warning">חיוג לצוות זכאות</Button>
+                  <Button as="a" href="tel:1-800-800-180" variant="warning">"חיוג ל"קו לרופא</Button>
                 </Card.Footer>
               </Card>
             </Col>
@@ -161,13 +169,12 @@ const App = () => {
                 <Card.Title>זכאות</Card.Title>
                 <Card.Img fluid="true" variant="top" src="../images/payments.jpeg" />
                 <Card.Body>
-                  <Card.Text>
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.
-      </Card.Text>
+                  <ListGroup as="ul">
+                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/zakaut.pdf" _blank rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
+                  </ListGroup>
                 </Card.Body>
                 <Card.Footer>
-                  <Button variant="warning">חיוג לצוות זכאות</Button>
+                  <Button as="a" href="tel:03-514-3635" variant="warning">חיוג לצוות זכאות</Button>
                 </Card.Footer>
               </Card>
             </Col>
@@ -176,13 +183,15 @@ const App = () => {
                 <Card.Title>טלרדיולוגיה</Card.Title>
                 <Card.Img fluid="true" variant="top" src="../images/teleradio.jpeg" />
                 <Card.Body>
-                  <Card.Text>
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.
-      </Card.Text>
+                  <ListGroup as="ul">
+                    <ListGroup.Item as="li">דימות / תמר</ListGroup.Item>
+                    <ListGroup.Item as="li">ניב"ה אולטראסאונד גניקולוגי / א.ק.ג</ListGroup.Item>
+                    <ListGroup.Item as="li">טלמדיסין / קרדילוגיה</ListGroup.Item>
+                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/teleradio.pdf" _blank rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
+                  </ListGroup>
                 </Card.Body>
                 <Card.Footer>
-                  <Button variant="warning">חיוג לצוות זכאות</Button>
+                  <Button as="a" href="tel:03-746-3525" variant="warning">חיוג לצוות טלרדיולוגיה</Button>
                 </Card.Footer>
               </Card>
             </Col>
@@ -191,13 +200,15 @@ const App = () => {
                 <Card.Title>SAP</Card.Title>
                 <Card.Img fluid="true" variant="top" src="../images/sap.jpeg" />
                 <Card.Body>
-                  <Card.Text>
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.
-      </Card.Text>
+                  <ListGroup as="ul">
+                    <ListGroup.Item as="li">סאפ</ListGroup.Item>
+                    <ListGroup.Item as="li">פורטל סאפ ומקוונים אישית</ListGroup.Item>
+                    <ListGroup.Item as="li">מכ"ם</ListGroup.Item>
+                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/SAP.pdf" _blank rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
+                  </ListGroup>
                 </Card.Body>
                 <Card.Footer>
-                  <Button variant="warning">חיוג לצוות זכאות</Button>
+                  <Button as="a" href="tel:03-746-3536" variant="warning">SAP חיוג לצוות</Button>
                 </Card.Footer>
               </Card>
             </Col>
@@ -206,13 +217,15 @@ const App = () => {
                 <Card.Title>ציוד קצה</Card.Title>
                 <Card.Img fluid="true" variant="top" src="../images/equipment.jpeg" />
                 <Card.Body>
-                  <Card.Text>
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.
-      </Card.Text>
+                  <ListGroup as="ul">
+                    <ListGroup.Item as="li">עמדת מחשב כולל מסך ומערכות הפעלה</ListGroup.Item>
+                    <ListGroup.Item as="li">מדפסות וסורקים</ListGroup.Item>
+                    <ListGroup.Item as="li">קורא כרטיסים</ListGroup.Item>
+                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/equipment.pdf" _blank rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
+                  </ListGroup>
                 </Card.Body>
                 <Card.Footer>
-                  <Button variant="warning">חיוג לצוות זכאות</Button>
+                  <Button as="a" href="tel:03-746-3530" variant="warning">חיוג לצוות ציוד קצה</Button>
                 </Card.Footer>
               </Card>
             </Col>
@@ -222,13 +235,15 @@ const App = () => {
                 <Card.Title>תקשורת וטלפוניה</Card.Title>
                 <Card.Img fluid="true" variant="top" src="../images/telecom.jpeg" />
                 <Card.Body>
-                  <Card.Text>
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.
-      </Card.Text>
+                  <ListGroup as="ul">
+                    <ListGroup.Item as="li">תקשורת / אינטרנט</ListGroup.Item>
+                    <ListGroup.Item as="li">טלפוניה</ListGroup.Item>
+                    <ListGroup.Item as="li">סנכרון דואר ארגוני למכשיר נייד</ListGroup.Item>
+                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/emptyPdfInfo.pdf" _blank rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
+                  </ListGroup>
                 </Card.Body>
                 <Card.Footer>
-                  <Button variant="warning">חיוג לצוות זכאות</Button>
+                  <Button as="a" href="tel:03-746-3527" variant="warning">חיוג לצוות תקשורת</Button>
                 </Card.Footer>
               </Card>
             </Col>
@@ -237,13 +252,15 @@ const App = () => {
                 <Card.Title>עמדות שירות</Card.Title>
                 <Card.Img fluid="true" variant="top" src="../images/servicestations.jpeg" />
                 <Card.Body>
-                  <Card.Text>
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.
-      </Card.Text>
+                  <ListGroup as="ul">
+                    <ListGroup.Item as="li">זימון וניהול תורים</ListGroup.Item>
+                    <ListGroup.Item as="li">עמדות תור לי <span style={{ color: "blue" }}>●</span> מכבי לי <span style={{ color: "blue" }}>●</span> פוטו</ListGroup.Item>
+                    <ListGroup.Item as="li">Video Conference</ListGroup.Item>
+                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/emptyPdfInfo.pdf" _blank rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
+                  </ListGroup>
                 </Card.Body>
                 <Card.Footer>
-                  <Button variant="warning">חיוג לצוות זכאות</Button>
+                  <Button as="a" href="tel:03-746-3531" variant="warning">חיוג לצוות עמדות שירות</Button>
                 </Card.Footer>
               </Card>
             </Col>
@@ -252,13 +269,14 @@ const App = () => {
                 <Card.Title>ספקים</Card.Title>
                 <Card.Img fluid="true" variant="top" src="../images/suppliers.jpeg" />
                 <Card.Body>
-                  <Card.Text>
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.
-      </Card.Text>
+                  <ListGroup as="ul">
+                    <ListGroup.Item as="li">חיוב ישיר</ListGroup.Item>
+                    <ListGroup.Item as="li"> מד"ח <span style={{ color: "blue" }}>●</span> מכבי לי <span style={{ color: "blue" }}>●</span> פוטו</ListGroup.Item>
+                    <ListGroup.Item as="li"><ListGroup.Item as="a" action href="../pdf/emptyPdfInfo.pdf" _blank rel="noopener noreferrer">למידע נוסף - לחץ על הקישור</ListGroup.Item></ListGroup.Item>
+                  </ListGroup>
                 </Card.Body>
                 <Card.Footer>
-                  <Button variant="warning">חיוג לצוות זכאות</Button>
+                  <Button as="a" href="tel:03-746-3533" variant="warning">חיוג לצוות ספקים</Button>
                 </Card.Footer>
               </Card>
             </Col>
