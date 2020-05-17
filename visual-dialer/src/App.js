@@ -52,7 +52,7 @@ const App = () => {
                     <ListGroup.Item
                       as='a'
                       action
-                      href='https://portaldoc.mac.org.il/dana-na/auth/url_default/welcome.cgi'
+                      href='https://macb.li/fp'
                       target='_blank'
                       rel='noopener noreferrer'>
                       FreePass - איפוס סיסמה בשירות עצמי
@@ -65,7 +65,7 @@ const App = () => {
                       href='https://api.whatsapp.com/send?phone=972508464238&text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%A8%D7%91%2C%0A%D7%90%D7%A0%D7%90%20%D7%A6%D7%A8%D7%95%20%D7%A2%D7%99%D7%9E%D7%99%20%D7%A7%D7%A9%D7%A8%20%D7%9C%D7%AA%D7%9E%D7%99%D7%9B%D7%94%20%D7%91%D7%A0%D7%95%D7%A9%D7%90%0A%28%D7%A0%D7%90%20%D7%9C%D7%A6%D7%99%D7%99%D7%9F%20%D7%A9%D7%9D%20%D7%9E%D7%9C%D7%90%20%D7%95%D7%A1%D7%99%D7%91%D7%AA%20%D7%94%D7%A4%D7%A0%D7%99%D7%94%29'>
                       פתיחת צ'אט Whatsapp עם מרכז תמיכה
                       <br />
-                      (ימים א'-ה' בין השעות 07:30 ל - 17:30)
+                      (ימים א'-ה' בין השעות 07:30 ל - 17:00)
                     </ListGroup.Item>
                   </ListGroup.Item>
                 </ListGroup>
@@ -102,7 +102,7 @@ const App = () => {
                       <ListGroup.Item
                         as='a'
                         action
-                        href='../pdf/passwords.pdf'
+                        href='../pdf/222.pdf'
                         _blank='true'
                         rel='noopener noreferrer'>
                         למידע נוסף - לחץ על הקישור
@@ -135,7 +135,7 @@ const App = () => {
                       <ListGroup.Item
                         as='a'
                         action
-                        href='../pdf/citrix.pdf'
+                        href='../pdf/333.pdf'
                         _blank='true'
                         rel='noopener noreferrer'>
                         למידע נוסף - לחץ על הקישור
@@ -171,7 +171,7 @@ const App = () => {
                       <ListGroup.Item
                         as='a'
                         action
-                        href='../pdf/AS400.pdf'
+                        href='../pdf/444.pdf'
                         _blank='true'
                         rel='noopener noreferrer'>
                         למידע נוסף - לחץ על הקישור
@@ -234,7 +234,7 @@ const App = () => {
                       <ListGroup.Item
                         as='a'
                         action
-                        href='../pdf/doctors.pdf'
+                        href='../pdf/666.pdf'
                         _blank='true'
                         rel='noopener noreferrer'>
                         למידע נוסף - לחץ על הקישור
@@ -299,7 +299,7 @@ const App = () => {
                       <ListGroup.Item
                         as='a'
                         action
-                        href='../pdf/zakaut.pdf'
+                        href='../pdf/888.pdf'
                         _blank='true'
                         rel='noopener noreferrer'>
                         למידע נוסף - לחץ על הקישור
@@ -335,7 +335,7 @@ const App = () => {
                       <ListGroup.Item
                         as='a'
                         action
-                        href='../pdf/teleradio.pdf'
+                        href='../pdf/999.pdf'
                         _blank='true'
                         rel='noopener noreferrer'>
                         למידע נוסף - לחץ על הקישור
@@ -399,7 +399,7 @@ const App = () => {
                       <ListGroup.Item
                         as='a'
                         action
-                        href='../pdf/equipment.pdf'
+                        href='../pdf/111111.pdf'
                         _blank='true'
                         rel='noopener noreferrer'>
                         למידע נוסף - לחץ על הקישור
@@ -434,7 +434,7 @@ const App = () => {
                       <ListGroup.Item
                         as='a'
                         action
-                        href='../pdf/emptyPdfInfo.pdf'
+                        href='../pdf/121212.pdf'
                         _blank='true'
                         rel='noopener noreferrer'>
                         למידע נוסף - לחץ על הקישור
@@ -469,7 +469,7 @@ const App = () => {
                       <ListGroup.Item
                         as='a'
                         action
-                        href='../pdf/emptyPdfInfo.pdf'
+                        href='../pdf/131313.pdf'
                         _blank='true'
                         rel='noopener noreferrer'>
                         למידע נוסף - לחץ על הקישור
