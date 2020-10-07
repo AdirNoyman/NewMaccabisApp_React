@@ -62,10 +62,23 @@ const App = () => {
                     <ListGroup.Item
                       as='a'
                       action
-                      href='https://api.whatsapp.com/send?phone=972508464238&text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%A8%D7%91%2C%0A%D7%90%D7%A0%D7%90%20%D7%A6%D7%A8%D7%95%20%D7%A2%D7%99%D7%9E%D7%99%20%D7%A7%D7%A9%D7%A8%20%D7%9C%D7%AA%D7%9E%D7%99%D7%9B%D7%94%20%D7%91%D7%A0%D7%95%D7%A9%D7%90%0A%28%D7%A0%D7%90%20%D7%9C%D7%A6%D7%99%D7%99%D7%9F%20%D7%A9%D7%9D%20%D7%9E%D7%9C%D7%90%20%D7%95%D7%A1%D7%99%D7%91%D7%AA%20%D7%94%D7%A4%D7%A0%D7%99%D7%94%29'>
-                      פתיחת צ'אט Whatsapp עם מרכז תמיכה
-                      <br />
-                      (ימים א'-ה' בין השעות 07:30 ל - 17:00)
+                      href='https://apps.commbox.io/chat/rwpxYb4oSSYYfLSrEM0xDw%3d%3d'>
+                      לצ'אט עם נציג תמיכה - לחץ כאן{'     '}
+                      <svg
+                        width='1.6em'
+                        height='1.6em'
+                        viewBox='0 0 16 16'
+                        class='bi bi-chat-dots'
+                        fill='currentColor'
+                        xmlns='http://www.w3.org/2000/svg'>
+                        <path
+                          fill-rule='evenodd'
+                          d='M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z'
+                        />
+                        <path d='M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z' />
+                      </svg>
+                      <br />                      
+                      (ימים א'-ה' בין השעות 07:30 ל - 17:30)
                     </ListGroup.Item>
                   </ListGroup.Item>
                 </ListGroup>
@@ -102,7 +115,7 @@ const App = () => {
                       <ListGroup.Item
                         as='a'
                         action
-                        href='../pdf/222.pdf'
+                        href='../pdf/passwords.pdf'
                         _blank='true'
                         rel='noopener noreferrer'>
                         למידע נוסף - לחץ על הקישור
@@ -135,7 +148,7 @@ const App = () => {
                       <ListGroup.Item
                         as='a'
                         action
-                        href='../pdf/333.pdf'
+                        href='../pdf/citrix.pdf'
                         _blank='true'
                         rel='noopener noreferrer'>
                         למידע נוסף - לחץ על הקישור
@@ -171,7 +184,7 @@ const App = () => {
                       <ListGroup.Item
                         as='a'
                         action
-                        href='../pdf/444.pdf'
+                        href='../pdf/AS400.pdf'
                         _blank='true'
                         rel='noopener noreferrer'>
                         למידע נוסף - לחץ על הקישור
@@ -234,7 +247,7 @@ const App = () => {
                       <ListGroup.Item
                         as='a'
                         action
-                        href='../pdf/666.pdf'
+                        href='../pdf/doctors.pdf'
                         _blank='true'
                         rel='noopener noreferrer'>
                         למידע נוסף - לחץ על הקישור
@@ -299,7 +312,7 @@ const App = () => {
                       <ListGroup.Item
                         as='a'
                         action
-                        href='../pdf/888.pdf'
+                        href='../pdf/zakaut.pdf'
                         _blank='true'
                         rel='noopener noreferrer'>
                         למידע נוסף - לחץ על הקישור
@@ -335,7 +348,7 @@ const App = () => {
                       <ListGroup.Item
                         as='a'
                         action
-                        href='../pdf/999.pdf'
+                        href='../pdf/teleradio.pdf'
                         _blank='true'
                         rel='noopener noreferrer'>
                         למידע נוסף - לחץ על הקישור
@@ -399,7 +412,7 @@ const App = () => {
                       <ListGroup.Item
                         as='a'
                         action
-                        href='../pdf/111111.pdf'
+                        href='../pdf/equipment.pdf'
                         _blank='true'
                         rel='noopener noreferrer'>
                         למידע נוסף - לחץ על הקישור
@@ -434,7 +447,7 @@ const App = () => {
                       <ListGroup.Item
                         as='a'
                         action
-                        href='../pdf/121212.pdf'
+                        href='../pdf/emptyPdfInfo.pdf'
                         _blank='true'
                         rel='noopener noreferrer'>
                         למידע נוסף - לחץ על הקישור
@@ -469,7 +482,7 @@ const App = () => {
                       <ListGroup.Item
                         as='a'
                         action
-                        href='../pdf/131313.pdf'
+                        href='../pdf/emptyPdfInfo.pdf'
                         _blank='true'
                         rel='noopener noreferrer'>
                         למידע נוסף - לחץ על הקישור
