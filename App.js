@@ -10,22 +10,8 @@ import Card from 'react-bootstrap/Card';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Button from 'react-bootstrap/Button';
 import ListGroup from 'react-bootstrap/ListGroup';
-
-const callCards = [
-  { title: 'card-1' },
-  { title: 'card-2' },
-  { title: 'card-3' },
-  { title: 'card-4' },
-  { title: 'card-5' },
-  { title: 'card-6' },
-  { title: 'card-7' },
-  { title: 'card-8' },
-  { title: 'card-9' },
-  { title: 'card-10' },
-  { title: 'card-11' },
-  { title: 'card-12' },
-  { title: 'card-13' }
-];
+import Image from 'react-bootstrap/Image';
+import ResponsiveEmbed from 'react-bootstrap/ResponsiveEmbed';
 
 const App = () => {
   return (
@@ -33,7 +19,51 @@ const App = () => {
       <NavBar />
       <Container style={{ paddingTop: '5rem' }}>
         <Row className='justify-content-lg-center' id='row-1'>
-          <Col lg={5}>
+          <Col lg={4}>
+            <Card id='chat' style={{ height: '100%' }}>
+              <Card.Title>
+                צא'ט עם נציג תמיכה
+                <br />
+                <div style={{ paddingTop: '2%' }}>
+                  <h6>(ימים א'-ה' בין השעות 07:30 ל - 17:30)</h6>
+                </div>
+              </Card.Title>
+              <div
+                style={{
+                  textAlign: 'center',
+                  paddingTop: '12%',
+                  paddingBottom: '10%',
+                }}>
+                <a
+                  href='https://apps.commbox.io/chat/rwpxYb4oSSYYfLSrEM0xDw%3d%3d'
+                  style={{ textDecoration: 'none' }}>
+                  <h3
+                    style={{
+                      marginBottom: '10%',
+                      color: '#b96607',
+                      fontWeight: 'bold',
+                    }}>
+                    לחץ לפתיחת הצ'אט
+                  </h3>
+
+                  <Card.Img
+                    // style={{
+                    //   flex: 1,
+                    //   width: '30%',
+                    //   marginLeft: '35%',
+                    //   marginTop: '17%',
+                    //   paddingBottom: '5%',
+                    // }}
+                    variant='center'
+                    src='../images/chatMaccabiYeda1.png'
+                    rounded
+                    fluid='true'
+                  />
+                </a>
+              </div>
+            </Card>
+          </Col>
+          <Col lg={4}>
             <Card id='selfService'>
               <Card.Title>
                 שירות עצמי
@@ -46,7 +76,6 @@ const App = () => {
                 fluid='true'
               />
               <Card.Body id='selfList'>
-                <Card.Text id='listTitle'>לחץ על הבחירה המבוקשת:</Card.Text>
                 <ListGroup as='ul'>
                   <ListGroup.Item as='li'>
                     <ListGroup.Item
@@ -56,29 +85,6 @@ const App = () => {
                       target='_blank'
                       rel='noopener noreferrer'>
                       FreePass - איפוס סיסמה בשירות עצמי
-                    </ListGroup.Item>
-                  </ListGroup.Item>
-                  <ListGroup.Item as='li'>
-                    <ListGroup.Item
-                      as='a'
-                      action
-                      href='https://apps.commbox.io/chat/rwpxYb4oSSYYfLSrEM0xDw%3d%3d'>
-                      לצ'אט עם נציג תמיכה - לחץ כאן{'     '}
-                      <svg
-                        width='1.6em'
-                        height='1.6em'
-                        viewBox='0 0 16 16'
-                        class='bi bi-chat-dots'
-                        fill='currentColor'
-                        xmlns='http://www.w3.org/2000/svg'>
-                        <path
-                          fill-rule='evenodd'
-                          d='M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z'
-                        />
-                        <path d='M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z' />
-                      </svg>
-                      <br />                      
-                      (ימים א'-ה' בין השעות 07:30 ל - 17:30)
                     </ListGroup.Item>
                   </ListGroup.Item>
                 </ListGroup>
